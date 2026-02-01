@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Chat | anonDate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="chat-body">
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="chat-info">
+                <div class="anon-indicator">👤</div>
+                <div class="chat-meta">
+                    <h2 id="partnerName">User#1234</h2>
+                    <span class="status">Anonymous • Online</span>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <button class="btn btn-icon" onclick="showSafetyMenu()" title="Safety Options">🛡️</button>
+                <button class="btn btn-icon" onclick="endChat()" title="End Chat">✕</button>
+            </div>
+        </header>
+
+        <div class="reveal-progress" id="revealBar">
+            <div class="progress-steps">
+                <div class="step active" data-step="1">Chat</div>
+                <div class="step" data-step="2">Interests</div>
+                <div class="step" data-step="3">Voice</div>
+                <div class="step" data-step="4">Photo</div>
+                <div class="step" data-step="5">Identity</div>
+            </div>
+            <button class="btn btn-reveal" id="revealBtn" onclick="requestReveal()">
+                Request Reveal
+            </button>
+        </div>
+
+        <div class="chat-messages" id="messageContainer">
+            <div class="system-message">
+                <p>🔒 You are now connected anonymously. Take your time getting to know each other.</p>
+                <p>Both must agree to reveal identities. You control what you share.</p>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <button class="btn btn-icon" onclick="showQuickReplies()">⚡</button>
+            <input type="text" id="messageInput" placeholder="Type a message..." maxlength="500">
+            <button class="btn btn-send" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Reveal Modal -->
+    <div id="revealModal" class="modal">
+        <div class="modal-content reveal-content">
+            <h3>Reveal Request</h3>
+            <p>You want to reveal: <span id="revealType">your photo</span></p>
+            <p class="warning">Once revealed, you cannot undo this. Your partner must also agree.</p>
+            <div class="reveal-options">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmReveal()">Confirm Reveal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safety Modal -->
+    <div id="safetyModal" class="modal">
+        <div class="modal-content">
+            <h3>Safety Options</h3>
+            <button class="btn btn-warning btn-full" onclick="blockUser()">Block User</button>
+            <button class="btn btn-danger btn-full" onclick="reportUser()">Report & Block</button>
+            <button class="btn btn-secondary btn-full" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
