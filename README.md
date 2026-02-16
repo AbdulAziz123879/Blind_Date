@@ -2,7 +2,7 @@
 
 A modern social networking platform designed to help singles connect, meet new people, and find meaningful relationships through blind date matchmaking.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [About](#about)
 - [Features](#features)
@@ -17,13 +17,13 @@ A modern social networking platform designed to help singles connect, meet new p
 
 ---
 
-## 🤝 About
+##  About
 
 Welcome to **Blind Date** – a social networking platform that revolutionizes how singles meet! Our platform connects people based on shared interests, values, and compatibility, making it easy to discover meaningful connections in a fun and safe environment.
 
 Whether you're looking for a casual meetup or a serious relationship, Blind Date provides the perfect space to connect with like-minded singles in your area.
 
-## ✨ Features
+##  Features
 
 ### For Users
 
@@ -48,7 +48,7 @@ Whether you're looking for a casual meetup or a serious relationship, Blind Date
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### For Users
 
@@ -104,7 +104,7 @@ Whether you're looking for a casual meetup or a serious relationship, Blind Date
 
 ---
 
-## 👥 User Guide
+##  User Guide
 
 ### Creating Your Profile
 
@@ -136,7 +136,7 @@ Whether you're looking for a casual meetup or a serious relationship, Blind Date
 2. Click on a match to open the chat
 3. Type your message and click **Send**
 4. Exchange contact information when both are comfortable
-5. Plan your blind date! 📅
+5. Plan your blind date! 
 
 ### Safety Tips
 
@@ -148,7 +148,7 @@ Whether you're looking for a casual meetup or a serious relationship, Blind Date
 
 ---
 
-## 👨‍💻 Developer Guide
+##  Developer Guide
 
 ### Project Structure
 ```
@@ -179,7 +179,7 @@ blind-date/
 
 ---
 
-## 🗄️ Database Setup
+##  Database Setup
 
 ### MongoDB Setup
 
@@ -243,7 +243,7 @@ blind-date/
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` – Register a new user
@@ -270,7 +270,7 @@ blind-date/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Help us make Blind Date better.
 
@@ -301,13 +301,13 @@ We welcome contributions! Help us make Blind Date better.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 💬 Support & Feedback
+##  Support & Feedback
 
 ### For Users
 
@@ -325,7 +325,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🌟 Community Guidelines
+##  Community Guidelines
 
 - Be respectful to all users
 - No harassment, discrimination, or hate speech
@@ -336,7 +336,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🎯 Roadmap
+##  Roadmap
 
 - [ ] Advanced AI-based matching algorithm
 - [ ] Group events and speed dating
